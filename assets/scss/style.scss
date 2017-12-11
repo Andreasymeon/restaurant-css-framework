@@ -1,0 +1,138 @@
+
+html, body { 
+	margin: 0 !important;
+	padding: 0 !important;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+		background-image: url("../img/8513_argentina_lauraaustin_1489.jpg");
+	background-repeat: no-repeat;
+	// -webkit-background-size: cover;
+	// -moz-background-size: cover;
+	// -o-background-size: cover;
+	background-size: contain;
+}
+
+.container-fluid, .row {
+	padding: 0 !important;
+	margin: 0 !important;
+	width: 100%;
+	height: 100%;
+}
+
+*[class^="col-"] {padding: 0 !important;}
+*[class^="section"] {
+	padding: 0 !important;
+	margin: 0 !important;
+	width: 99vw;
+	height: 100vh;
+	}
+
+nav {
+	background-color: rgba(233, 236, 239, 0);
+	a {
+		color: #3B5F81 !important;
+		font-family: 'Lora', serif;
+	}
+}
+
+
+.section-1 {
+
+	  .header {
+	  	display: flex !important;
+	  	flex-direction: column !important;
+	  	justify-content: center !important;
+	  	align-items: center !important;
+	  	text-align: center;
+		padding: 0 !important;
+		margin: auto !important;
+		color: #3B5F81 !important;
+		background-color: rgba(233, 236, 239, 0) !important;
+
+			.title {
+				align-self: center !important;
+				margin: auto;
+				width: 50%;
+				font {
+					family: 'Cabin Condensed', cursive;
+					size: 80px;
+					weight: 200;
+				}
+			}
+
+			a {
+				color: #3B5F81 !important; 
+
+			}
+		}
+}
+
+.section-2 {
+
+	nav {
+		margin: 10px;
+		line-height: 21px;
+
+		.pagination {
+			margin: 0;
+
+			a {
+				color: #3B5F81;
+				font-family: 'Cabin Condensed', cursive; 
+
+			}
+
+		}
+	}
+
+	.card {
+		margin-top: 20px !important;
+
+	}
+
+	#reservationOut {
+		text-align: right;
+
+		.btnOut {
+			background-color: #FF703F;
+			border: none;
+		}
+	}
+
+	#reservationIn {
+		text-align: left;
+
+		.btnIn {
+			background-color: #FF703F;
+			border: none;
+		}
+	}
+
+	.jumbotron {
+		display: flex;
+		background-color: rgba(233, 236, 239, 0) !important;
+		color: #3B5F81;
+		margin: 0;
+		padding: 2rem 1rem;
+
+		h1 {
+			justify-content: left;
+				size: 25px !important;
+			font {
+				family: 'Cabin Condensed', cursive; 
+				weight: 500;
+			}
+
+		}
+
+		p {
+			font {
+				family: 'Lora', serif;
+				line-height: 30px;
+			}
+		}
+	}
+}
