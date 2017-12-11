@@ -7,7 +7,7 @@ html, body {
 body {
   background-image: url("../img/8513_argentina_lauraaustin_1489.jpg");
   background-repeat: no-repeat;
-  background-size: contain; }
+  background-size: cover; }
 
 .container-fluid, .row {
   padding: 0 !important;
