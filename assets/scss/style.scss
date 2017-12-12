@@ -3,16 +3,19 @@ html, body {
 	margin: 0 !important;
 	padding: 0 !important;
 	width: 100%;
-	height: 100%;
+	height: auto;
 }
 
 body {
-		background-image: url("../img/8513_argentina_lauraaustin_1489.jpg");
+	min-height: 100%;
+	background-image: url("../img/8513_argentina_lauraaustin_1489.jpg");
 	background-repeat: no-repeat;
 	// -webkit-background-size: cover;
 	// -moz-background-size: cover;
 	// -o-background-size: cover;
-	background-size: cover;
+	background-size: auto 80%;
+	background-position: 50% 0%;
+
 }
 
 .container-fluid, .row {
@@ -90,8 +93,19 @@ nav {
 
 	.card {
 		margin-top: 20px !important;
-
+		text-align: justify;
+    text-justify: inter-word;
+		min-height: 370px !important;
+		background-color: transparent !important;
+		border: 0 !important;	
 	}
+
+	#flex-end {
+		align-items: flex-end !important;
+		flex-direction: row !important;
+	}
+
+	// .bg-white {background-color: #fff !important;}
 
 	#reservationOut {
 		text-align: right;
