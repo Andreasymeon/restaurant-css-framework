@@ -31,8 +31,10 @@ nav {
 
 
 .section-1 {
-		background-image: url("../img/8513_argentina_lauraaustin_0542.jpg");
-		background-size: cover;
+	margin-top: 100px !important;
+	margin-right: 100px !important;
+	background-image: url("../img/8513_argentina_lauraaustin_0542.jpg");
+	background-size: cover;
 
 	.header {
   	display: flex !important;
@@ -61,11 +63,12 @@ nav {
 }
 
 .section-2 {
+	margin-top: 100px !important;
 
 	.separationWhite {
 	background-color: #fff;
 	height: 200px;
-}
+	}
 
 	p {
 		color: #3B5F81 !important;
@@ -90,11 +93,13 @@ nav {
 		}
 	}
 
+
 	.card {
 		margin-top: 20px !important;
 		text-align: justify;
     	text-justify: inter-word;
 		min-height: 370px !important;
+		max-height: 400px !important;
 		background-color: transparent !important;
 		border: 0 !important;	
 	}
@@ -129,7 +134,11 @@ nav {
 	}
 }
 
-.section-5 {
+.section-4 {
+	margin-top: 300px !important;
+
+	.pagination {margin-top: 15px;}
+
 	#reservationOut {
 		text-align: right;
 
@@ -172,4 +181,8 @@ nav {
 			}
 		}
 	}
+}
+
+.section-5 {
+
 }
