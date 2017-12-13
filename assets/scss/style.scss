@@ -3,19 +3,7 @@ html, body {
 	margin: 0 !important;
 	padding: 0 !important;
 	width: 100%;
-	height: auto;
-}
-
-body {
-	min-height: 100%;
-	background-image: url("../img/8513_argentina_lauraaustin_1489.jpg");
-	background-repeat: no-repeat;
-	// -webkit-background-size: cover;
-	// -moz-background-size: cover;
-	// -o-background-size: cover;
-	background-size: auto 80%;
-	background-position: 50% 0%;
-
+	height: 0%;
 }
 
 .container-fluid, .row {
@@ -37,43 +25,56 @@ nav {
 	background-color: rgba(233, 236, 239, 0);
 	a {
 		color: #3B5F81 !important;
-		font-family: 'Lora', serif;
+		font-family: 'Cabin', sans-serif;
 	}
 }
 
 
 .section-1 {
+		background-image: url("../img/8513_argentina_lauraaustin_0542.jpg");
+		background-size: cover;
 
-	  .header {
-	  	display: flex !important;
-	  	flex-direction: column !important;
-	  	justify-content: center !important;
-	  	align-items: center !important;
-	  	text-align: center;
-		padding: 0 !important;
-		margin: auto !important;
-		color: #3B5F81 !important;
-		background-color: rgba(233, 236, 239, 0) !important;
+	.header {
+  	display: flex !important;
+  	flex-direction: column !important;
+  	justify-content: center !important;
+  	align-items: center !important;
+  	text-align: center;
+	padding: 0 !important;
+	margin: auto !important;
+	color: #3B5F81 !important;
+	background-color: rgba(233, 236, 239, 0) !important;
 
-			.title {
-				align-self: center !important;
-				margin: auto;
-				width: 50%;
-				font {
-					family: 'Cabin Condensed', cursive;
-					size: 80px;
-					weight: 200;
-				}
-			}
-
-			a {
-				color: #3B5F81 !important; 
-
+		.title {
+			align-self: center !important;
+			margin: auto;
+			width: 50%;
+			font {
+				family: 'Istok Web', sans-serif;
+				size: 80px;
+				weight: 200;
 			}
 		}
+
+		a {color: #3B5F81 !important;}
+	}
 }
 
 .section-2 {
+
+	.separationWhite {
+	background-color: #fff;
+	height: 200px;
+}
+
+	p {
+		color: #3B5F81 !important;
+		font {
+			family: 'Cabin', sans-serif;
+			
+			line-height: 30px;
+		}
+	}
 
 	nav {
 		margin: 10px;
@@ -85,28 +86,50 @@ nav {
 			a {
 				color: #3B5F81;
 				font-family: 'Cabin Condensed', cursive; 
-
 			}
-
 		}
 	}
 
 	.card {
 		margin-top: 20px !important;
 		text-align: justify;
-    text-justify: inter-word;
+    	text-justify: inter-word;
 		min-height: 370px !important;
 		background-color: transparent !important;
 		border: 0 !important;	
 	}
+}
 
-	#flex-end {
-		align-items: flex-end !important;
-		flex-direction: row !important;
+.section-3 {
+	
+	
+	h1,h2 { 
+		margin: 50px;
+		display: flex !important;
+		justify-content: center !important;
+		color: #3B5F81 !important;
+
+		font {
+			family: 'Istok Web', sans-serif;
+		}
 	}
 
-	// .bg-white {background-color: #fff !important;}
+	p {
+		display: flex !important;
+		justify-content: center !important;
+		color: #3B5F81 !important;
+		font {
+			family: 'Cabin', sans-serif;
+			line-height: 30px;
+		}
+	}
 
+	nav {
+		margin: 15px;
+	}
+}
+
+.section-5 {
 	#reservationOut {
 		text-align: right;
 
@@ -134,7 +157,7 @@ nav {
 
 		h1 {
 			justify-content: left;
-				size: 25px !important;
+			size: 25px !important;
 			font {
 				family: 'Cabin Condensed', cursive; 
 				weight: 500;
