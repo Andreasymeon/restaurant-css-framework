@@ -8,10 +8,10 @@
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<!-- Font -->
-	<link href="https://fonts.googleapis.com/css?family=Cabin|Istok+Web|Lora" rel="stylesheet">    
+	<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Istok+Web" rel="stylesheet">
 	<!-- icons -->
 	<script src="https://use.fontawesome.com/b12c948a09.js"></script>
-	<!-- bootstrap scripts -->
+	<!-- scripts -->
 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
@@ -20,10 +20,11 @@
 	<div class="container-fluid">
 		<!-- section-1 -->
 		<section id="homepage" class="section-1">
+		<div class="opacity">
 			<div class="row">
 				<!-- Navigation -->
-				<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-					<a class="navbar-brand js-scroll-trigger" href="#page-top">Logo</a>	
+				<nav class="col-lg-12 pl-5 pr-5 navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+					<a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="./assets/img/logo.png" alt="" id=logo></a>	
 					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"  data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu
 				   <i class="fa fa-bars"></i>
 			   	</button>
@@ -39,7 +40,7 @@
 								<a class="nav-link js-scroll-trigger" href="#">Gallery</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link js-scroll-trigger" href="#download">Reservations</a>
+								<a class="nav-link js-scroll-trigger" href="#download">Book Here</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -61,6 +62,7 @@
 						</div>
 				</header>
 			</div>
+		</div>
 		</section>
 		<!-- section-1 -->
 
@@ -70,8 +72,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 mx-auto">
-						<h1>About
-						</h1>
+						<h1>About</h1>
 						<div class="row">
 						  <div class="col-sm-6">
 								<div id="text2" class="card">
@@ -220,18 +221,26 @@
 			</div>
 		</section> <!-- section-4 -->
 		
-		<section id="Reservations" class="section-5">
+		<section id="BookHere" class="section-5">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-8">
+					<div class="col-lg-8 mx-auto">
+						<h1>Book now</h1>
 						<form>
 		  				<div class="form-group row">
-		    				<label for="InputFullName">Your Name</label>
-		    				<input type="name" class="form-control" id="InputFullName" aria-describedby="emailHelp" placeholder="Full Name">
+		    				<input type="Name" class="form-control" id="InputFullName" aria-describedby="emailHelp" placeholder="Full Name">
 		  				</div>
 		  				<div class="form-group">
-		    				<label for="InputEmail">Email</label>
-		    				<input type="Email" class="form-control" id="InputEmail" placeholder="@">
+		    				<input type="Email" class="form-control" id="InputEmail" placeholder="merry@christmas.all">
+		  				</div>
+		  				<div class="form-group">
+		    				<input type="PhoneNumber" class="form-control" id="InputPhone" placeholder="Phone Number">
+		  				</div>
+		  				<div class="form-group">
+		    				<textarea class="form-control" id="InputMessage" rows="3" placeholder="Write your message here..."></textarea>
+		  				</div>
+		  				<div>
+		  					<input type="submit" value="Submit" class="mx-auto">
 		  				</div>
 		  			</form>	
 	  			</div>
@@ -240,5 +249,20 @@
 		</section>
 
 	</div> <!-- container-fluid -->
+
+
+	<script>
+		 $(document).scroll(function () {
+			var y = $(this).scrollTop();
+			if (y > 800) {
+			$('#mainNav').css("border-bottom", "1px solid grey");
+			$('#logo').css("height", "30px");
+			}
+
+			else {
+			  $('#mainNav').css({"border-bottom": "1px solid white", "margin-top": "40"});
+			}
+			});
+	</script>
 </body>
 </html>
