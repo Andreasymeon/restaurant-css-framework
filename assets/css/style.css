@@ -1,3 +1,6 @@
+@font-face {
+  font-family: odachi;
+  src: url(fonts/Odachi/Odachi.woff); }
 html, body {
   margin: 0 !important;
   padding: 0 !important;
@@ -5,10 +8,15 @@ html, body {
   height: 0%; }
 
 .container-fluid, .row {
-  padding: 0 !important;
+  padding-top: 50px !important;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
   margin: 0 !important;
   width: 100%;
   height: 100%; }
+
+.container-fluid {
+  padding-top: 50px !important; }
 
 *[class^="col-"] {
   padding: 0 !important; }
@@ -16,7 +24,7 @@ html, body {
 *[class^="section"] {
   padding: 0 !important;
   margin: 0 !important;
-  width: 99vw;
+  width: 99.7vw;
   height: 100vh; }
 
 #mainNav {
@@ -30,42 +38,81 @@ html, body {
       width: auto; }
 
 .section-1 {
-  margin-top: 100px !important;
   margin-right: 100px !important;
   background-image: url("../img/8513_argentina_lauraaustin_0542.jpg");
   background-size: cover; }
-  .section-1 .opacity {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 99vw;
-    height: 100vh;
-    z-index: 999; }
-  .section-1 .header {
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important;
+  .section-1 .title {
     text-align: center;
     padding: 0 !important;
     margin: auto !important;
     color: #3B5F81 !important;
-    background-color: rgba(233, 236, 239, 0) !important; }
-    .section-1 .header .title {
-      align-self: center !important;
+    background-color: rgba(233, 236, 239, 0) !important;
+    height: 500px; }
+    .section-1 .title .name {
       margin: auto;
       width: 50%;
       size: 150px !important;
       color: #fff;
-      font-family: 'Fjalla One', sans-serif;
-      font-weight: bold; }
-    .section-1 .header a {
-      color: #3B5F81 !important; }
-
+      text-shadow: 2px 2px 4px #000;
+      font-family: 'Odachi', sans-serif;
+      font-size: 9em; }
+    .section-1 .title a {
+      padding-top: 80px;
+      color: #fff;
+      text-shadow: 2px 2px 4px #000;
+      font-family: 'Istok Web', sans-serif;
+      font-size: 2em; }
+      .section-1 .title a span {
+        margin-top: 460px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 20px;
+        height: 20px;
+        margin-left: -12px;
+        border-left: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-animation: scrolldown 1.5s infinite;
+        animation: scrolldown 1.5s infinite;
+        box-sizing: border-box; }
+@-webkit-keyframes scrolldown {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0; } }
+@keyframes scrolldown {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0; } }
 .section-2 {
-  margin-top: 100px !important; }
+  padding-top: 50px !important; }
   .section-2 h1 {
+    text-shadow: 2px 2px 4px #E5F2F1;
+    display: flex !important;
+    justify-content: center !important;
+    color: #3B5F81 !important;
+    font-family: 'Odachi', sans-serif; }
+  .section-2 .intro {
+    text-align: center !important;
     color: #3B5F81;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.5em;
     font-family: 'Fjalla One', sans-serif; }
   .section-2 p {
+    margin: 0;
     color: #3B5F81 !important;
     font-family: 'Istok Web', sans-serif;
     font-line-height: 30px; }
@@ -78,35 +125,66 @@ html, body {
         color: #3B5F81;
         font-family: 'Fjalla One', sans-serif; }
   .section-2 .card {
-    margin-top: 20px !important;
+    border: 0 !important; }
+  .section-2 #text2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
     text-align: justify;
     text-justify: inter-word;
-    min-height: 370px !important;
-    max-height: 400px !important;
-    background-color: transparent !important;
-    border: 0 !important; }
+    min-height: 240px !important;
+    max-height: 240px !important;
+    background-color: transparent !important; }
+  .section-2 .imageRow, .section-2 #imgS2 {
+    min-height: 420px !important;
+    max-height: 420px !important; }
 
-.section-3 h1, .section-3 h2 {
-  margin: 50px;
-  display: flex !important;
-  justify-content: center !important;
-  color: #3B5F81 !important;
-  font-family: 'Fjalla One', sans-serif; }
-.section-3 p {
-  display: flex !important;
-  justify-content: center !important;
-  color: #3B5F81 !important;
-  font-family: 'Istok Web', sans-serif;
-  font-line-height: 30px; }
-.section-3 nav {
-  margin: 15px; }
+.section-3 {
+  padding-top: 50px !important;
+  margin-bottom: 600px !important; }
+  .section-3 ul, .section-3 li {
+    border-radius: 0 !important;
+    margin-bottom: 0 !important; }
+  .section-3 h1 {
+    padding-top: 250px !important;
+    text-shadow: 2px 2px 4px #E5F2F1;
+    display: flex !important;
+    justify-content: center !important;
+    color: #3B5F81 !important;
+    font-family: 'Odachi', sans-serif; }
+  .section-3 h2 {
+    padding-top: 30px !important;
+    text-shadow: 2px 2px 4px #E5F2F1;
+    display: flex !important;
+    justify-content: center !important;
+    color: #3B5F81 !important;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.5em; }
+  .section-3 p {
+    padding-top: 30px !important;
+    padding-left: 200px;
+    padding-right: 200px;
+    text-align: center;
+    display: flex !important;
+    justify-content: center !important;
+    color: #3B5F81 !important;
+    font-family: 'Istok Web', sans-serif;
+    font-line-height: 30px; }
+  .section-3 span {
+    padding-top: 30px !important;
+    padding-bottom: 40px !important;
+    display: flex !important;
+    justify-content: center !important; }
+  .section-3 nav {
+    margin: 15px; }
 
 .section-4 {
-  margin-top: 300px !important;
-  background-image: url("../img/8513_argentina_lauraaustin_1489.jpg");
-  background-size: 100% auto;
-  background-position: 0 70%;
-  background-repeat: no-repeat; }
+  padding-top: 50px !important; }
+  .section-4 h1 {
+    text-shadow: 2px 2px 4px #E5F2F1;
+    display: flex !important;
+    justify-content: center !important;
+    color: #3B5F81 !important;
+    font-family: 'Odachi', sans-serif; }
   .section-4 #reservationOut {
     margin-top: 15px !important;
     text-align: right; }
@@ -126,12 +204,15 @@ html, body {
     margin: 0;
     padding: 2rem 1rem; }
     .section-4 .jumbotron h1 {
+      text-shadow: 2px 2px 4px #E5F2F1;
       justify-content: left;
       size: 25px !important;
-      font-family: 'Fjalla One', sans-serif;
+      font-family: 'Odachi', sans-serif;
       font-weight: 500; }
     .section-4 .jumbotron p {
       font-family: 'Istok Web', sans-serif; }
+  .section-4 .carousel {
+    padding-top: 50px !important; }
   .section-4 .d-block {
     margin-top: 15px !important; }
   .section-4 .pagination {
@@ -140,7 +221,9 @@ html, body {
 .section-5 {
   background-color: #033A4E; }
   .section-5 h1 {
-    font-family: 'Fjalla One', sans-serif;
+    padding-top: 50px !important;
+    text-shadow: 2px 2px 4px #000;
+    font-family: 'Odachi', sans-serif;
     font-size: 3em;
     color: #fff;
     text-align: center;
@@ -173,10 +256,12 @@ html, body {
     opacity: 0.78 !important; }
   .section-5 input[type=submit] {
     border: 1px solid #fff;
+    text-shadow: 2px 2px 2px #000;
     background-color: transparent;
     color: #fff;
     margin: 0 auto;
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 1em; }
+    font-family: 'Odachi', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */
