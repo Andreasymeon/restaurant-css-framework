@@ -1,5 +1,13 @@
+$color-text: #3B5F81;
+$color-bg: #003E4F;
+$color-clear: #e1eaed;
+$color-white: #fff;
+$font-h1: 'Odachi', sans-serif;
+$font-p: 'Istok Web', sans-serif;
+$font-extra: 'Fjalla One', sans-serif;
+
 @font-face {
-	font-family: odachi;
+	font-family: Odachi;
 	src: url(fonts/Odachi/Odachi.woff);
 }
 
@@ -7,7 +15,7 @@ html, body {
 	margin: 0 !important;
 	padding: 0 !important;
 	width: 100%;
-	height: 0%;
+	height: 100%;
 }
 
 .container-fluid, .row {
@@ -25,52 +33,52 @@ html, body {
 *[class^="section"] {
 	padding: 0 !important;
 	margin: 0 !important;
-	width: 99.7vw;
+	width: 100vw;
 	height: 100vh;
 	}
 
 #mainNav {
-	background-color: #fff;
-	border-bottom: 1px solid #fff;
+	background-color:$color-white;
+	border-bottom: 1px solid $color-clear;
 	a {
-		color: #3B5F81 !important;
-		font-family: 'Istok Web', sans-serif;
+		color: $color-text !important;
+		font-family: $font-p;
 		#logo {
 			height: 80px;
 			width: auto;
 		}
 	}
 }
+/*-----------------------HOMEPAGE-----------------------*/
 
-.section-1 {
-	margin-right: 100px !important;
+#homepage {
+	padding-bottom: 200px;
 	background-image: url("../img/8513_argentina_lauraaustin_0542.jpg");
 	background-size: cover;
 	.title {
 	  	text-align: center;
 		padding: 0 !important;
 		margin: auto !important;
-		color: #3B5F81 !important;
+		color: $color-text !important;
 		background-color: rgba(233, 236, 239, 0) !important;
 		height: 500px;
 		.name {
 			margin: auto;
 			width: 50%;
 			size: 150px !important;
-			color: #fff;
+			color: $color-white;
 			text-shadow: 2px 2px 4px #000;
 			font: {
-				family: 'Odachi', sans-serif;
-				// weight: bold;
+				family: $font-h1;
 				size: 9em;
 			}
 		}
 		a {
 		padding-top: 80px;
-		color: #fff;
+		color: $color-white;
 		text-shadow: 2px 2px 4px #000;
 		font: {
-				family: 'Istok Web', sans-serif;
+				family: $font-p;
 				size: 2em;
 			}
 			span {
@@ -81,8 +89,8 @@ html, body {
 				width: 20px;
 				height: 20px;
 				margin-left: -12px;
-				border-left: 2px solid #fff;
-				border-bottom: 2px solid #fff;
+				border-left: 2px solid $color-white;
+				border-bottom: 2px solid $color-white;
 				-webkit-transform: rotate(-45deg);
 				transform: rotate(-45deg);
 				-webkit-animation: scrolldown 1.5s infinite;
@@ -119,55 +127,46 @@ html, body {
 	}
 }
 
-.section-2 {
+/*-----------------------ABOUT-----------------------*/
+
+#about {
 	padding-top: 50px !important;
+	margin-bottom: 200px !important;
 	h1 { 
-		text-shadow: 2px 2px 4px #E5F2F1;
+		padding-bottom: 1em;
+		text-shadow: 2px 2px 4px $color-clear;
 		display: flex !important;
 		justify-content: center !important;
-		color: #3B5F81 !important;
+		color: $color-text !important;
 		font: {
-			family: 'Odachi', sans-serif;
+			family: $font-h1;
 		}
 	}
 	.intro {
+		margin-top: 40px;
+		margin-bottom: 40px;
 		text-align: center !important;
 		color: #3B5F81;
-		line-height: 30px;
+		line-height: 25px;
 		text-align: center;
-		margin-bottom: 40px;
 		font: {
-			size: 1.5em;
-			family:'Fjalla One', sans-serif;
+			size: 1.2em;
+			family:$font-extra;
 		}
 	}
 	p {
 		margin: 0;
-		color: #3B5F81 !important;
+		color: $color-text !important;
+		letter-spacing: .1em;
 		font: {
-			family:'Istok Web', sans-serif;
+			family:$font-p;
 			line-height: 30px;
-			// weight: bold;
-		}
-	}
-	nav {
-		margin: 50px !important;
-		line-height: 21px;
-
-		.pagination {
-			margin: 0;
-			a {
-				color: #3B5F81;
-				font-family: 'Fjalla One', sans-serif;
-			}
 		}
 	}
 	.card {
 		border: 0 !important;
 	}
 	#text2 {
-		margin-top: 50px;
-		margin-bottom: 50px;
 		text-align: justify;
     	text-justify: inter-word;
 		min-height: 240px !important;
@@ -180,164 +179,168 @@ html, body {
 	}
 }
 
-.section-3 {
-	padding-top: 50px !important;
-	margin-bottom: 600px !important; 
+/*-----------------------MENU-----------------------*/
+
+#menu {
+	margin-top: 350px;
+	h1 { 
+		padding-top: 50px !important;
+		text-shadow: 2px 2px 4px $color-clear;
+		display: flex !important;
+		justify-content: center !important;
+		color: $color-text !important;
+		font: {
+			family: $font-h1;
+		}
+	}
 	ul, li {
 		border-radius: 0 !important;
 		margin-bottom: 0 !important;
-		// padding: 100px !important;
-	}
-	h1 { 
-		padding-top: 250px !important;
-		text-shadow: 2px 2px 4px #E5F2F1;
-		display: flex !important;
-		justify-content: center !important;
-		color: #3B5F81 !important;
-		font: {
-			family: 'Odachi', sans-serif;
+		h2 {
+			padding-top: 30px !important;
+			text-shadow: 2px 2px 4px $color-clear;
+			display: flex !important;
+			justify-content: center !important;
+			color: $color-text !important;
+			font: {
+				family: $font-extra;
+				size: 1.5em;
+			}
 		}
-	}
-	h2 {
-		padding-top: 30px !important;
-		text-shadow: 2px 2px 4px #E5F2F1;
-		display: flex !important;
-		justify-content: center !important;
-		color: #3B5F81 !important;
-		font: {
-			family: 'Fjalla One', sans-serif;
-			size: 1.5em;
+		p {
+			padding-top: 30px !important;
+			padding-left: 200px;
+			padding-right: 200px;
+			text-align: center;
+			display: flex !important;
+			justify-content: center !important;
+			color:  !important;
+			font: {
+				family: $font-p;
+				line-height: 30px;
+			}
 		}
-	}
-	p {
-		padding-top: 30px !important;
-		padding-left: 200px;
-		padding-right: 200px;
-		text-align: center;
-		display: flex !important;
-		justify-content: center !important;
-		color: #3B5F81 !important;
-		font: {
-			family: 'Istok Web', sans-serif;
-			line-height: 30px;
+		span {
+			padding-top: 30px !important;
+			padding-bottom: 30px !important;
+			display: flex !important;
+			justify-content: center !important;
 		}
-	}
-	span {
-		padding-top: 30px !important;
-		padding-bottom: 40px !important;
-		display: flex !important;
-		justify-content: center !important;
-	}
-	nav {
-		margin: 15px;
 	}
 }
 
-.section-4 {
-	// background-image: url("../img/8513_argentina_lauraaustin_1489.jpg");
-	// background-size: 100% auto;
-	// background-position: 0 70%;
-	// background-repeat: no-repeat;
+/*-----------------------GALLERY-----------------------*/
+
+#gallery {
+	padding-top: 50px !important;
+	margin-top: 50px !important;
+	padding-bottom: 60px;
 	h1 { 
 		// padding-top: 250px !important;
-		text-shadow: 2px 2px 4px #E5F2F1;
+		text-shadow: 2px 2px 4px $color-clear;
 		display: flex !important;
 		justify-content: center !important;
-		color: #3B5F81 !important;
+		color: $color-text !important;
 		font: {
-			family: 'Odachi', sans-serif;
+			family: $font-h1;
 		}
 	}
-	padding-top: 50px !important;
-	#reservationOut {
-		margin-top: 15px !important;
-		text-align: right;
-		.btnOut {
-			background-color: #FF703F;
-			border: none;
+	p {
+		padding-top: 100px !important;
+		text-align: center;
+		text-align: justify;
+		letter-spacing: .1em;
+		display: flex !important;
+		justify-content: center !important;
+		color:  $color-bg !important;
+		font: {
+			family: $font-extra;
+			line-height: 30px;
 		}
 	}
-	#reservationIn {
-		margin-top: 15px !important;
-		text-align: left;
-		.btnIn {
-			background-color: #FF703F;
-			border: none;
-		}
-	}
-	.jumbotron {
-		display: flex;
-		background-color: rgba(233, 236, 239, 0) !important;
-		color: #3B5F81;
-		margin: 0;
-		padding: 2rem 1rem;
-		h1 {
-			text-shadow: 2px 2px 4px #E5F2F1;
-			justify-content: left;
-			size: 25px !important;
-			font: {
-				family: 'Odachi', sans-serif;
-				weight: 500;
-			}
-
-		}
-		p {
-			font: {
-				family: 'Istok Web', sans-serif;
-			}
-		}
-	}
-	.carousel {padding-top: 50px !important;																																																											}
 	.d-block {margin-top: 15px !important;}
 	.pagination {margin-top: 15px;}
 }
 
-.section-5 {
-	background-color: #033A4E;
+#map {
+	margin-top: 70px !important;
+}
+
+/*-----------------------RESERVATION + CONTACT-----------------------*/
+
+#reservation {
+	padding-top: 70px !important;
+	padding-bottom: 100px;
+	background-color: $color-bg;
 	h1 {
-		padding-top: 50px !important;
 		text-shadow: 2px 2px 4px #000;
-		font-family: 'Odachi', sans-serif;
+		font-family: $font-h1;
 		font-size: 3em;
-		color: #fff;
+		color: $color-white;
 		text-align: center;
 		margin-top: 5rem;
 	}
-	input[type=Name], input[type=Email], input[type=PhoneNumber], textarea {
-		padding: 12px;
-		border-bottom: 1px solid #fff !important;
-		background-color: transparent;
-		border: 0;
-		border-radius: 0;
-		color: #fff !important;
+	#resa {
+		h1 {
+			text-shadow: 2px 2px 4px $color-clear;
+			color: $color-text !important;
+		}
+		iframe {
+			margin-top: 60px;
+		}
 	}
-	input:focus, textarea {
-		outline: none !important;
-		background-color: transparent !important;
-	}
+	#contact {
+		padding: 100px;
+		input[type=Name], input[type=Email], input[type=PhoneNumber], textarea {
+			padding: 10px;
+			//margin-bottom: 10px;
+			border-bottom: 1px solid $color-clear !important;
+			background-color: transparent;
+			border: 0;
+			border-radius: 0;
+			color: $color-clear !important;
+		}
+		input:focus, textarea {
+			outline: none !important;
+			background-color: transparent !important;
+		}
 
-	::-webkit-input-placeholder { /*Chrome/Opera/Safari */
-	color: #fff; opacity: 0.8 !important;
-	}
-	::-moz-placeholder { /* Firefox 19+ */
-	color: #fff; opacity: 0.8 !important;
-	}
-	:-ms-input-placeholder { /* IE 10+ */
-	color: #fff; opacity: 0.8 !important;
-	}
-	:-moz-placeholder { /* Firefox 18- */
-	color: #fff; opacity: 0.78 !important;
-	}
-	input[type=submit] {
-		border: 1px solid #fff;
-		text-shadow: 2px 2px 2px #000;
-		background-color: transparent;
-		color: #fff;
-		margin: 0 auto;
-		font: {
-			family: 'Odachi', sans-serif;
-			size: 1.5em;
-			weight: bold;
+		::-webkit-input-placeholder { /*Chrome/Opera/Safari */
+		color: $color-clear; opacity: 0.8 !important;
+		}
+		::-moz-placeholder { /* Firefox 19+ */
+		color: $color-clear; opacity: 0.8 !important;
+		}
+		:-ms-input-placeholder { /* IE 10+ */
+		color: $color-clear; opacity: 0.8 !important;
+		}
+		:-moz-placeholder { /* Firefox 18- */
+		color: $color-clear; opacity: 0.78 !important;
+		}
+		input[type=submit] {
+			border: 1px solid $color-clear;
+			text-shadow: 2px 2px 2px #000;
+			background-color: transparent;
+			color: $color-clear;
+			margin-top: 10% !important;
+			margin-left: 40% !important;
+			font: {
+				family: $font-extra;
+				size: 1.5em;
+				weight: bold;
+			}
 		}
 	}
 }
+
+#footer {
+	padding-top: 1rem;	
+	background-color: $color-clear;
+	height: 8rem;
+	text-align: center;
+	font: {
+		family: $font-extra;
+		size: 1em;
+	}
+}
+
