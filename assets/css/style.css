@@ -8,7 +8,7 @@ html, body {
   height: 100%; }
 
 .container-fluid, .row {
-  padding-top: 50px !important;
+  padding-top: 3.125em !important;
   padding-right: 0 !important;
   padding-left: 0 !important;
   margin: 0 !important;
@@ -16,7 +16,7 @@ html, body {
   height: 100%; }
 
 .container-fluid {
-  padding-top: 50px !important; }
+  padding-top: 3.125em !important; }
 
 *[class^="col-"] {
   padding: 0 !important; }
@@ -34,12 +34,12 @@ html, body {
     color: #3B5F81 !important;
     font-family: "Istok Web", sans-serif; }
     #mainNav a #logo {
-      height: 80px;
+      height: 4em;
       width: auto; }
 
 /*-----------------------HOMEPAGE-----------------------*/
 #homepage {
-  padding-bottom: 200px;
+  padding-bottom: 14.5em;
   background-image: url("../img/8513_argentina_lauraaustin_0542.jpg");
   background-size: cover; }
   #homepage .title {
@@ -48,11 +48,11 @@ html, body {
     margin: auto !important;
     color: #3B5F81 !important;
     background-color: rgba(233, 236, 239, 0) !important;
-    height: 500px; }
+    height: 31.25em; }
     #homepage .title .name {
       margin: auto;
       width: 50%;
-      size: 150px !important;
+      size: 9.375em !important;
       color: #fff;
       text-shadow: 2px 2px 4px #000;
       font-family: "Odachi", sans-serif;
@@ -68,9 +68,9 @@ html, body {
         position: absolute;
         top: 0;
         left: 50%;
-        width: 20px;
-        height: 20px;
-        margin-left: -12px;
+        width: .9em;
+        height: .9em;
+        margin-left: -.75em;
         border-left: 2px solid #fff;
         border-bottom: 2px solid #fff;
         -webkit-transform: rotate(-45deg);
@@ -98,8 +98,8 @@ html, body {
     opacity: 0; } }
 /*-----------------------ABOUT-----------------------*/
 #about {
-  padding-top: 50px !important;
-  margin-bottom: 200px !important; }
+  padding-top: 3.125em !important;
+  margin-bottom: 12.5em !important; }
   #about h1 {
     padding-bottom: 1em;
     text-shadow: 2px 2px 4px #e1eaed;
@@ -108,11 +108,11 @@ html, body {
     color: #3B5F81 !important;
     font-family: "Odachi", sans-serif; }
   #about .intro {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
     text-align: center !important;
     color: #3B5F81;
-    line-height: 25px;
+    line-height: 1em;
     text-align: center;
     font-size: 1.2em;
     font-family: "Fjalla One", sans-serif; }
@@ -121,22 +121,22 @@ html, body {
     color: #3B5F81 !important;
     letter-spacing: .1em;
     font-family: "Istok Web", sans-serif;
-    font-line-height: 30px; }
+    font-line-height: 1.5em; }
   #about .card {
     border: 0 !important; }
   #about #text2 {
     text-align: justify;
     text-justify: inter-word;
-    min-height: 240px !important;
-    max-height: 240px !important;
+    min-height: 15em !important;
+    max-height: 15em !important;
     background-color: transparent !important; }
   #about .imageRow, #about #imgS2 {
-    min-height: 420px !important;
-    max-height: 420px !important; }
+    min-height: 26.25em !important;
+    max-height: 26.25em !important; }
 
 /*-----------------------MENU-----------------------*/
 #menu {
-  margin-top: 350px; }
+  margin-top: 26.25em; }
   #menu h1 {
     padding-top: 50px !important;
     text-shadow: 2px 2px 4px #e1eaed;
@@ -148,7 +148,7 @@ html, body {
     border-radius: 0 !important;
     margin-bottom: 0 !important; }
     #menu ul h2, #menu li h2 {
-      padding-top: 30px !important;
+      padding-top: 3.125em !important;
       text-shadow: 2px 2px 4px #e1eaed;
       display: flex !important;
       justify-content: center !important;
@@ -156,54 +156,58 @@ html, body {
       font-family: "Fjalla One", sans-serif;
       font-size: 1.5em; }
     #menu ul p, #menu li p {
-      padding-top: 30px !important;
-      padding-left: 200px;
-      padding-right: 200px;
+      padding-top: 3.125em !important;
+      padding-left: 12.5em;
+      padding-right: 12.5em;
       text-align: center;
       display: flex !important;
       justify-content: center !important;
-      color: !important;
+      color: #3B5F81 !important;
       font-family: "Istok Web", sans-serif;
-      font-line-height: 30px; }
+      font-line-height: 1.875em; }
     #menu ul span, #menu li span {
-      padding-top: 30px !important;
-      padding-bottom: 30px !important;
+      padding-top: 1.875em !important;
+      padding-bottom: 1.875em !important;
       display: flex !important;
       justify-content: center !important; }
 
 /*-----------------------GALLERY-----------------------*/
 #gallery {
-  padding-top: 50px !important;
-  margin-top: 50px !important;
-  padding-bottom: 60px; }
+  margin-left: .5em !important; }
+  #gallery .row {
+    padding: 1.5em !important; }
   #gallery h1 {
+    padding-bottom: 2em;
+    padding-left: 6em;
     text-shadow: 2px 2px 4px #e1eaed;
     display: flex !important;
-    justify-content: center !important;
+    justify-content: end !important;
     color: #3B5F81 !important;
     font-family: "Odachi", sans-serif; }
-  #gallery p {
-    padding-top: 100px !important;
-    text-align: center;
-    text-align: justify;
+  #gallery #galleryPhotos {
+    margin-top: 7em; }
+  #gallery #galleryText p {
+    margin: 2em;
+    padding-left: 4em;
+    padding-right: 2em;
+    padding-top: .2em !important;
+    text-align: justify !important;
     letter-spacing: .1em;
     display: flex !important;
     justify-content: center !important;
     color: #003E4F !important;
     font-family: "Fjalla One", sans-serif;
-    font-line-height: 30px; }
-  #gallery .d-block {
-    margin-top: 15px !important; }
+    font-line-height: 2em; }
   #gallery .pagination {
-    margin-top: 15px; }
+    margin-top: .938em; }
 
 #map {
-  margin-top: 70px !important; }
+  margin-top: 4.375em !important; }
 
 /*-----------------------RESERVATION + CONTACT-----------------------*/
 #reservation {
-  padding-top: 70px !important;
-  padding-bottom: 100px;
+  padding-top: 4.375em !important;
+  padding-bottom: 6.25em;
   background-color: #003E4F; }
   #reservation h1 {
     text-shadow: 2px 2px 4px #000;
@@ -216,11 +220,11 @@ html, body {
     text-shadow: 2px 2px 4px #e1eaed;
     color: #3B5F81 !important; }
   #reservation #resa iframe {
-    margin-top: 60px; }
+    margin-top: 3.75em; }
   #reservation #contact {
-    padding: 100px; }
+    padding: 6.25em; }
     #reservation #contact input[type=Name], #reservation #contact input[type=Email], #reservation #contact input[type=PhoneNumber], #reservation #contact textarea {
-      padding: 10px;
+      padding: .625em;
       border-bottom: 1px solid #e1eaed !important;
       background-color: transparent;
       border: 0;

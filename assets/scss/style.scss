@@ -19,7 +19,7 @@ html, body {
 }
 
 .container-fluid, .row {
-	padding-top: 50px !important;
+	padding-top: 3.125em !important;
 	padding-right: 0 !important;
 	padding-left: 0 !important;
 	margin: 0 !important;
@@ -27,7 +27,7 @@ html, body {
 	height: 100%;
 }
 
-.container-fluid {padding-top: 50px !important;}
+.container-fluid {padding-top: 3.125em !important;}
 
 *[class^="col-"] {padding: 0 !important;}
 *[class^="section"] {
@@ -44,7 +44,7 @@ html, body {
 		color: $color-text !important;
 		font-family: $font-p;
 		#logo {
-			height: 80px;
+			height: 4em;
 			width: auto;
 		}
 	}
@@ -52,7 +52,7 @@ html, body {
 /*-----------------------HOMEPAGE-----------------------*/
 
 #homepage {
-	padding-bottom: 200px;
+	padding-bottom: 14.5em;
 	background-image: url("../img/8513_argentina_lauraaustin_0542.jpg");
 	background-size: cover;
 	.title {
@@ -61,11 +61,11 @@ html, body {
 		margin: auto !important;
 		color: $color-text !important;
 		background-color: rgba(233, 236, 239, 0) !important;
-		height: 500px;
+		height: 31.25em;
 		.name {
 			margin: auto;
 			width: 50%;
-			size: 150px !important;
+			size: 9.375em !important;
 			color: $color-white;
 			text-shadow: 2px 2px 4px #000;
 			font: {
@@ -86,9 +86,9 @@ html, body {
 				position: absolute;
 				top: 0;
 				left: 50%;
-				width: 20px;
-				height: 20px;
-				margin-left: -12px;
+				width: .9em;
+				height: .9em;
+				margin-left: -.75em;
 				border-left: 2px solid $color-white;
 				border-bottom: 2px solid $color-white;
 				-webkit-transform: rotate(-45deg);
@@ -130,8 +130,8 @@ html, body {
 /*-----------------------ABOUT-----------------------*/
 
 #about {
-	padding-top: 50px !important;
-	margin-bottom: 200px !important;
+	padding-top: 3.125em !important;
+	margin-bottom: 12.5em !important;
 	h1 { 
 		padding-bottom: 1em;
 		text-shadow: 2px 2px 4px $color-clear;
@@ -143,11 +143,11 @@ html, body {
 		}
 	}
 	.intro {
-		margin-top: 40px;
-		margin-bottom: 40px;
+		margin-top: 2.5em;
+		margin-bottom: 2.5em;
 		text-align: center !important;
 		color: #3B5F81;
-		line-height: 25px;
+		line-height: 1em	;
 		text-align: center;
 		font: {
 			size: 1.2em;
@@ -160,7 +160,7 @@ html, body {
 		letter-spacing: .1em;
 		font: {
 			family:$font-p;
-			line-height: 30px;
+			line-height: 1.5em;
 		}
 	}
 	.card {
@@ -169,20 +169,20 @@ html, body {
 	#text2 {
 		text-align: justify;
     	text-justify: inter-word;
-		min-height: 240px !important;
-		max-height: 240px !important;
+		min-height: 15em !important;
+		max-height: 15em !important;
 		background-color: transparent !important;
 	}
 	.imageRow, #imgS2 {
-		min-height: 420px !important;
-		max-height: 420px !important;
+		min-height: 26.25em !important;
+		max-height: 26.25em !important;
 	}
 }
 
 /*-----------------------MENU-----------------------*/
 
 #menu {
-	margin-top: 350px;
+	margin-top: 26.25em;
 	h1 { 
 		padding-top: 50px !important;
 		text-shadow: 2px 2px 4px $color-clear;
@@ -197,7 +197,7 @@ html, body {
 		border-radius: 0 !important;
 		margin-bottom: 0 !important;
 		h2 {
-			padding-top: 30px !important;
+			padding-top: 3.125em !important;
 			text-shadow: 2px 2px 4px $color-clear;
 			display: flex !important;
 			justify-content: center !important;
@@ -208,21 +208,21 @@ html, body {
 			}
 		}
 		p {
-			padding-top: 30px !important;
-			padding-left: 200px;
-			padding-right: 200px;
+			padding-top: 3.125em !important;
+			padding-left: 12.5em;
+			padding-right: 12.5em;
 			text-align: center;
 			display: flex !important;
 			justify-content: center !important;
-			color:  !important;
+			color: $color-text !important;
 			font: {
 				family: $font-p;
-				line-height: 30px;
+				line-height: 1.875em;
 			}
 		}
 		span {
-			padding-top: 30px !important;
-			padding-bottom: 30px !important;
+			padding-top: 1.875em !important;
+			padding-bottom: 1.875em !important;
 			display: flex !important;
 			justify-content: center !important;
 		}
@@ -232,45 +232,60 @@ html, body {
 /*-----------------------GALLERY-----------------------*/
 
 #gallery {
-	padding-top: 50px !important;
-	margin-top: 50px !important;
-	padding-bottom: 60px;
+	//background-image: url("../img/8513_argentina_lauraaustin_1489.jpg");
+	//background-size: cover;
+	//background-size: no-repeat;
+	//background-position: 50% 75%;
+
+	.row {padding: 1.5em !important;}
+	margin-left: .5em !important;
+
 	h1 { 
-		// padding-top: 250px !important;
+		padding-bottom: 2em;
+		padding-left: 6em;
 		text-shadow: 2px 2px 4px $color-clear;
 		display: flex !important;
-		justify-content: center !important;
+		justify-content: end !important;
 		color: $color-text !important;
 		font: {
 			family: $font-h1;
 		}
 	}
-	p {
-		padding-top: 100px !important;
-		text-align: center;
-		text-align: justify;
-		letter-spacing: .1em;
-		display: flex !important;
-		justify-content: center !important;
-		color:  $color-bg !important;
-		font: {
-			family: $font-extra;
-			line-height: 30px;
+	#galleryPhotos {
+		margin-top: 7em;
+	}
+	#galleryText {
+		
+		//height: 420px;
+		p {
+			margin: 2em;
+			padding-left: 4em;
+			padding-right: 2em;
+			padding-top: .2em !important;
+			text-align: justify !important;
+			letter-spacing: .1em;
+			display: flex !important;
+			justify-content: center !important;
+			color:  $color-bg !important;
+			font: {
+				family: $font-extra;
+				line-height: 2em;
+			}
 		}
 	}
-	.d-block {margin-top: 15px !important;}
-	.pagination {margin-top: 15px;}
+	//-block {margin-top: .938em !important;}
+	.pagination {margin-top: .938em;}
 }
 
 #map {
-	margin-top: 70px !important;
+	margin-top: 4.375em !important;
 }
 
 /*-----------------------RESERVATION + CONTACT-----------------------*/
 
 #reservation {
-	padding-top: 70px !important;
-	padding-bottom: 100px;
+	padding-top: 4.375em !important;
+	padding-bottom: 6.25em;
 	background-color: $color-bg;
 	h1 {
 		text-shadow: 2px 2px 4px #000;
@@ -286,14 +301,13 @@ html, body {
 			color: $color-text !important;
 		}
 		iframe {
-			margin-top: 60px;
+			margin-top: 3.75em;
 		}
 	}
 	#contact {
-		padding: 100px;
+		padding: 6.25em;
 		input[type=Name], input[type=Email], input[type=PhoneNumber], textarea {
-			padding: 10px;
-			//margin-bottom: 10px;
+			padding: .625em;
 			border-bottom: 1px solid $color-clear !important;
 			background-color: transparent;
 			border: 0;
