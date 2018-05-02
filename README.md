@@ -1,6 +1,6 @@
 # restaurant-css-framework
 
-English (--> francais plus bas)
+English (--> francais en dessous)
 
 ## Mission
 
