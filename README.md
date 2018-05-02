@@ -4,7 +4,7 @@ English (--> francais plus bas)
 
 ## Mission
 
-Create the swebite of a restaurant. Fictional and the type of food (burger, pizza, Asian, ...) is left to the choice of the learner.
+Create the webite of a restaurant. Fictional and the type of food (burger, pizza, Asian, ...) is left to the choice of the learner.
 
 Minimum 5 pages accessible by a navigation bar (navbar) present on all pages and leading to the different sections: Home, Map, Photos, Restaurants, Contact.
 
@@ -23,13 +23,13 @@ Minimum:
 - A **Map** page with menus presented as a grouped list with badges (for prices for example)
 - A **Photos** page with a photo gallery (minimum 10) and a pagination (3 photos per page)
 - A **Restaurants** page with the address, a map and the opening hours of at least two restaurants (it's a franchise!)
-- A **Contact** page with a contact form including last name, first name, e-mail, drop-down list (subject of the message with a select and options), a text field (for the message), a button of sending with [glyphicon] (http://glyphicons.com/). The labels of the fields are in the appropriate semantic tag.
+- A **Contact** page with a contact form including last name, first name, e-mail, drop-down list (subject of the message with a select and options), a text field (for the message), a button of sending with [glyphicon](http://glyphicons.com/). The labels of the fields are in the appropriate semantic tag.
 
 ## Constraint
 *for those who have the audacity to think about it*:
 - Do not use a theme already done;
 - Publish your site via GitHub Pages;
-- [Readme](https://medium.com/becode/how-to-make-a-readme-on-github-cc11f3df606a) useful.
+- [Readme] useful.
 
 ## Bonus
 - Uses SASS
@@ -70,7 +70,7 @@ Il faut au minimum :
 *pour ceux qui auraient l'audace d'y penser* :
 - Ne pas utiliser de thème déjà tout fait ;
 - Publier son site via GitHub Pages ;
-- [Readme](https://medium.com/becode/comment-faire-un-readme-sur-github-cc11f3df606a) utile.
+- [Readme] utile.
 
 ## Bonus
 - Utilise SASS
