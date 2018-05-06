@@ -2,6 +2,9 @@
 
 English (--> francais en dessous)
 
+This project was to get familiarized with a Framework. What I learned: Bootstrap, SASS and a bit of JavaScript, and I worked with the Google API for the map.
+-----------------------
+
 ## Mission
 
 Create the webite of a restaurant. Fictional and the type of food (burger, pizza, Asian, ...) is left to the choice of the learner.
@@ -42,6 +45,9 @@ Minimum:
 ------------------------------------------------------------------
 
 (francais)
+
+C'etait un projet pour nous familiariser avec un Framework. e que j'ai appris: Bootstrap, SASS un peu de JavaScript, j'ia travaillé avec l'API de Google pour integrer la map.
+-----------------------
 
 ## Mission
 
