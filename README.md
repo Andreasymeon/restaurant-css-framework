@@ -1,9 +1,28 @@
-# restaurant-css-framework
+English & Francais
 
-English (--> francais en dessous)
+- Restaurant CSS-framework (English)
+  * [Learning Objectives](#learning-objectives)
+  * [Mission](#mission)
+  * [Project: A bootstrap site](#project-a-bootstrap-site)
+  * [Composition of the site](#composition-of-the-site)
+  * [Constraint](#constraint)
+  * [Bonus](#bonus)
+  * [Learning Objectives](#learning-objectives-1)
+  
+- Restaurant CSS-framework (francais)
+  * [Mission](#mission-1)
+  * [Projet : Un site en bootstrap](#projet-un-site-en-bootstrap)
+  * [Composition du site](#composition-du-site)
+  * [Contrainte](#contrainte)
+  * [Bonus](#bonus-1)
+  * [Objectifs d'apprentissage](#objectifs-d'-apprentissage)
 
-This project was to get familiarized with a Framework. What I learned: Bootstrap, SASS and a bit of JavaScript, and I worked with the Google API for the map.
------------------------
+
+# Restaurant CSS-framework (English)
+
+## Learning Objectives
+
+Project was to get familiarized with a Framework. What I learned: Bootstrap, SASS and a bit of JavaScript, and I worked with the Google API for the map.
 
 ## Mission
 
@@ -42,12 +61,10 @@ Minimum:
 - use SASS in a realistic project
 - consolidate acquired in git, css and html
 
-------------------------------------------------------------------
 
-(francais)
+# Restaurant CSS-framework (francais)
 
-C'etait un projet pour nous familiariser avec un Framework. e que j'ai appris: Bootstrap, SASS un peu de JavaScript, j'ia travaillé avec l'API de Google pour integrer la map.
------------------------
+Projet pour nous familiariser avec un Framework. e que j'ai appris: Bootstrap, SASS un peu de JavaScript, j'ia travaillé avec l'API de Google pour integrer la map.
 
 ## Mission
 
