@@ -25,7 +25,7 @@ English & Francais
 Project was to get familiarized with a Framework. What I learned: Bootstrap, SASS and a bit of JavaScript, and I worked with the Google API for the map.
 
 ## Mission
-
+No imposed layout.
 Create the webite of a restaurant. Fictional and the type of food (burger, pizza, Asian, ...) is left to the choice of the learner.
 
 Minimum 5 pages accessible by a navigation bar (navbar) present on all pages and leading to the different sections: Home, Map, Photos, Restaurants, Contact.
